@@ -18,7 +18,7 @@ const SideBar = () => {
   };
   return (
     <div className="sidebar">
-      <List disablePadding dense>
+      <List disablePadding dense style={{ marginTop: '5px'}}>
         <Link to="/">
           <ListItem>
             <ListItemText primary="Dashboard" />

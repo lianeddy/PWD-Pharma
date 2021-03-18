@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
   Button,
-  makeStyles,
   MenuItem,
   FormControl,
   Select,
@@ -163,12 +162,6 @@ const ProductAdmin = () => {
                 left: "78%",
               }}
             >
-              <Button
-                style={{ backgroundColor: "#2F4F4F", color: "white" }}
-                onClick={toggle}
-              >
-                Add New Product
-              </Button>
               {/* SORT */}
               <FormControl style={{ width: "275px" }}>
                 <InputLabel id="demo-controlled-open-select-label">
@@ -241,8 +234,15 @@ const ProductAdmin = () => {
                 />
               </div>
 
-              <Button onClick={searchBtn} style={{ backgroundColor: "teal" }}>
+              <Button onClick={searchBtn} style={{ backgroundColor: "#305c4c", color: 'white' }}>
                 Search
+              </Button>
+
+              <Button
+                style={{ backgroundColor: "teal", color: "white", marginTop: '20px' }}
+                onClick={toggle}
+              >
+                Add New Product
               </Button>
             </div>
           </div>

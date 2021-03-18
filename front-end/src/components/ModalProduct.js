@@ -244,7 +244,7 @@ const ModalProduct = ({categoryList, toggle, showModal, modalName, idProd, data}
                                 variant="raised"
                                 component="span"
                                 className={classes.button}
-                                style={{ backgroundColor: 'grey' }}
+                                style={{ backgroundColor: '#29AFBB', marginTop: '5px' }}
                                 onClick={() => console.log("Ok")}
                             >
                                 Upload
@@ -264,9 +264,9 @@ const ModalProduct = ({categoryList, toggle, showModal, modalName, idProd, data}
                           Close
                         </button>
                         <button
-                          className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                          className="text-white font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                           type="button"
-                          style={{ transition: "all .15s ease" }}
+                          style={{ transition: "all .15s ease", backgroundColor: 'teal' }}
                           onClick={idProd ? () => saveChange(idProd) : () => saveChange()}
                         >
                           Save Changes
