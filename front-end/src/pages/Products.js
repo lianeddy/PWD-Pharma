@@ -132,9 +132,11 @@ const Products = (props) => {
 		<div className="flex flex-col">
 			<ExtendedNavbar />
 			<div className="flex flex-row items-start justify-items-auto">
-				<div className="mt-10 ml-5 w-auto space-y-3 mx-auto flex flex-col">
+				<div className="mt-28 ml-5 w-auto space-y-3 mx-auto flex flex-col pr-10">
 					<div className="w-max space-y-3 flex flex-col mb-5">
-						<label className="text-lg font-bold">Categories</label>
+						<label className="text-lg font-bold text-gray-800">
+							Categories
+						</label>
 
 						<label
 							className="cursor-pointer text-gray-700 hover:text-black hover:bg-gray-100 transition duration-300 rounded-sm"
@@ -145,7 +147,9 @@ const Products = (props) => {
 						{loading ? <CircularProgress /> : renderCategories()}
 					</div>
 					<div className="border-t-2 border-gray-300 w-max pt-5">
-						<label className="text-lg font-bold ">Filter By:</label>
+						<label className="text-lg font-bold text-gray-800">
+							Filter By:
+						</label>
 
 						<PriceSlider
 							max_price={product_price_highest}
@@ -157,7 +161,7 @@ const Products = (props) => {
 					<div className="flex flex-row items-center justify-between w-full">
 						<div className="ml-7 flex justify-center justify-items-center items-center mt-5">
 							<FormControl className={classes.formControl}>
-								<InputLabel style={{ color: "black" }}>SORT BY</InputLabel>
+								<InputLabel className="text-gray-800">SORT BY</InputLabel>
 								<Select value={categorySelected} onChange={handleChange}>
 									<MenuItem value={"DESC"}>Newest</MenuItem>
 									<MenuItem value={"ASC"}>Latest</MenuItem>
